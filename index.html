@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-MX" >
-	<head>
+	<head class="imagen">
 		<meta charset="UTF-8">
 		<title>sort playground</title>
 		<link rel="stylesheet" href="css/index.css" />
@@ -16,8 +16,18 @@
 			</div>
 			<div class="hotel">
 				Aquí se muestran las tarjetas del hotel:<br>
-				<button onclick="">Organizar por Número de habitación</button><button onclick="">Organizar por Nombre</button>
+				<!-- solo se referenció a la función que está ordenando está info -->
+				<button onclick="ordenaPorHabitacion()";>Organizar por Número de habitación</button><button onclick="ordenaPorHuesped()">Organizar por Nombre</button>
 			</div>
+			<div class="adicionar"> 
+				<!-- generamos los campos para ingresar el texto-->
+				Aquí se agrega un huésped: <br>
+				Número de habitación: <input id="habitacion" style="margin:20px" type="text"><br><br>
+				Nombre del huésped: <input id="huesped" style="margin:10px" type="text"><br><br>
+				<!-- referenciamos a la función que los guardará y desplegará en la lista existente -->
+		    	<button id="btn_guardar" onclick="guardar()">Guardar</button><br><br>
+        	</div>
+		</div>
 			<div class="datos" id="salida">
 			</div>
 		</div>
