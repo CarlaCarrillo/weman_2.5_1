@@ -12,10 +12,52 @@ function dibujaTarjetas(arreglo) {
 }
 
 function ordenaPorHabitacion(arreglo) {
+	var registro = [
+	{numHabitacion: "87", nombreHuesped: "Donna Noble"},
+	{numHabitacion: "34", nombreHuesped: "Jean Luc Piccard"},
+	{numHabitacion: "23", nombreHuesped: "Deana Troi"},
+	{numHabitacion: "12", nombreHuesped: "Christpher Pike"},
+	{numHabitacion: "67", nombreHuesped: "Amy Pond"},
+	{numHabitacion: "45", nombreHuesped: "Miyamoto Musashi"},
+	{numHabitacion: "93", nombreHuesped: "Amelia Earhart"},
+	{numHabitacion: "47", nombreHuesped: "Katherin Janeway"}
+];
+console.log(registro.sort(function (prev,next) {
+if (prev.numHabitacion > next.numHabitacion) {
+return 1;
+}
+if (prev.numHabitacion < next.numHabitacion) {
+return -1;
+}
+return 0;
+}));
+
+let ctrlMostrado = document.getElementById('salida');
+
 	//En esta función escribe la función que ordenará el arreglo por habitación
 }
 
+
 function ordenaPorHuesped(arreglo) {
+	var registro = [
+	{numHabitacion: "87", nombreHuesped: "Donna Noble"},
+	{numHabitacion: "34", nombreHuesped: "Jean Luc Piccard"},
+	{numHabitacion: "23", nombreHuesped: "Deana Troi"},
+	{numHabitacion: "12", nombreHuesped: "Christpher Pike"},
+	{numHabitacion: "67", nombreHuesped: "Amy Pond"},
+	{numHabitacion: "45", nombreHuesped: "Miyamoto Musashi"},
+	{numHabitacion: "93", nombreHuesped: "Amelia Earhart"},
+	{numHabitacion: "47", nombreHuesped: "Katherin Janeway"}
+];
+console.log(registro.sort(function (prev,next) {
+if (prev.nombreHuesped > next.nombreHuesped) {
+return 1;
+}
+if (prev.nombreHuesped < next.nombreHuesped) {
+return -1;
+}
+return 0;
+}));
 	//Acá puedes hacer la otra que ordene por el nombre del huesped
 }
 
